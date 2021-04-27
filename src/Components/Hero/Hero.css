@@ -11,7 +11,7 @@
     
     position: relative;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -93,6 +93,11 @@
     animation-delay: 1.5s;
 }
 
+
+#hero .hero-image {
+    width: 100%;
+    height: 100%;
+}
 
 
 /* ------------------------------------------------------------------------------- */
