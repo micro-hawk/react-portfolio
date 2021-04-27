@@ -21,7 +21,7 @@ export default function Hero(props) {
                          </a>
                     </div>
                     <div className="col-lg-8">
-                            <img className="hero-image" src={props.heroBannersrc} />;
+                            <img className="hero-image" src={props.heroBannersrc} />
                     </div>
                 </div>
             </section>
