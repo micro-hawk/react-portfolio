@@ -4,7 +4,7 @@ import Hero from './Components/Hero/Hero';
 function App() {
   return (
     <div className="App">
-      <Hero />
+      <Hero heroBannersrc="./Images/hero-vector.png" />
     </div>
   );
 }
