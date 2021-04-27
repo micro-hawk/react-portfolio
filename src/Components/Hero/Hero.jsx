@@ -6,7 +6,7 @@ export default function Hero(props) {
         <div>
             <section id="hero">
                 <div className="hero container row">
-                    <div className="col-lg-4 col-md-">
+                    <div className="col-lg-4">
                         <h1>
                             Hey,<span></span>
                         </h1>
