@@ -1,4 +1,6 @@
 #hero {
+
+    padding: 10rem 2rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,7 +15,7 @@
 
 
 #hero .hero {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     justify-content: flex-start;
     margin: 0 auto;
     padding: 0 50px;
@@ -69,7 +71,7 @@
     color: crimson;
     background-color: transparent;
     border-radius: 30px;
-
+    font-weight: bold;
     border: 2px solid crimson;
     font-size: 2rem;
     text-transform: uppercase;
@@ -92,7 +94,8 @@
 
 
 #hero .hero-image {
-    width: 100%;
+    float: right;
+    width: 70%;
     height: 100%;
 }
 
