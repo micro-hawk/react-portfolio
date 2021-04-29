@@ -2,6 +2,8 @@ import React from "react";
 import "./Hero.css";
 
 export default function Hero(props) {
+
+        
     return (
         <div>
             <section id="hero">
@@ -21,10 +23,12 @@ export default function Hero(props) {
                          </a>
                     </div>
                     <div className="col-lg-8">
-                            <img className="hero-image" src={props.heroBannersrc} />
+                            <img className="hero-image" src={props.heroBannersrc} alt="MicroHawk" />
                     </div>
                 </div>
             </section>
+
+           
         </div>
     );
 }

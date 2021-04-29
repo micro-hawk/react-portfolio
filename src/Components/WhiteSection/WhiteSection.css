@@ -1,10 +1,10 @@
 #WhiteSection {
     min-height: 100vh;
-    background-color: #0F2027;
+    background-color: #fff;
 }
 
 .sample-text {
-    color: white;
+    color: black;
     padding: 10rem;
 }
 .sample-text h2 {
