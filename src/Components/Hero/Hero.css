@@ -23,6 +23,7 @@
 
 #hero h1
 {
+    font-family: 'Architects Daughter', cursive;
     display: block;
     width: fit-content;
     color: transparent;
@@ -87,7 +88,8 @@
 
 
 #hero .userName {
-    color: transparent;
+    font-family: 'Cookie', cursive;
+        color: transparent;
     animation: text_reveal_username .5s ease forwards;
     animation-delay: 1.5s;
 }

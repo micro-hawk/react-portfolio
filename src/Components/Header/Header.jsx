@@ -33,7 +33,7 @@ export default function Header(props) {
                <div class="logo">
                   MicroHawk
                </div>
-               <div class="menu">
+               <div class="menu hover hover-3">
                   <ul>
                      <li><a href="#">Home</a></li>
                      <li><a href="#">About</a></li>
