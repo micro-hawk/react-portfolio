@@ -1,138 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
-
-body {
-    /* font-family: "Helvetica Neue",sans-serif; */
-    font-weight: lighter;
-    box-sizing: border-box;
-}
-
-#header .wrapper header nav .menu a {
-    text-decoration: none;
-    font-weight: 400;
-}
-
-#header .wrapper header nav .menu a:hover {
-    color: crimson;
-    /* text-decoration: line-through; */
-    transition: .8s ease all;
-}
-
-header {
+/* navbar styling */
+.navbar{
     position: fixed;
     width: 100%;
-    z-index: 10000;
-    /* height: 100vh; */
-    /* background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%; */
-    /* background-size: cover; */
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    /* background: var(--primary-color); */
+    background: var(--blur-background);
+    backdrop-filter: var(--blur-filter);
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: var(--light-color);
+    font-size: 35px;
+    font-weight: 600;
+    transition: .5s ease all;
+}
+/* .navbar .logo a:hover{
+    color: var(--primary-color);
+} */
+.navbar .logo a span{
+    color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
 
-.logo {
-    font-family: 'Shadows Into Light', cursive;
-    line-height: 2rem;
-    position: fixed;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 2rem;
-    letter-spacing: 2px;
+.navbar.sticky .logo a {
+    color: var(--primary-color);
+}
+.navbar.sticky .logo a span{
+    color: var(--light-color);
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 0rem;
-}
-
-nav ul {
-    line-height: 2rem;
+.navbar .menu li{
     list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding-right: 40px;
-    transition: 1s;
-
-}
-
-
-#header .wrapper header nav.black .menu a:hover {
-    color: black;
-    /* text-decoration: line-through; */
-
-    transition: .8s ease all;
-}
-
-nav.black ul {
-    /* background: rgba(255,255,255,0.4) */
-    background-color: crimson;
-}
-
-nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+}
+.navbar .menu li a{
+    display: block;
+    color: var(--light-color);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: var(--primary-color);
+}
+.navbar.sticky .menu li a:hover{
+    color: var(--primary-color);
 }
 
-nav ul li a {
-    text-decoration: none;
+
+
+
+/* menu btn styling */
+.menu-btn{
     color: #fff;
-    font-size: 1.3rem;
-}
-
-
-
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    background: #000;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
+    font-size: 28px;
     cursor: pointer;
-    color: #fff;
     display: none;
 }
-
-@media(max-width: 786px) {
-
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 1.8rem;
-    }
-
-    nav ul {
-          max-height: 0px;
-          background: black;
-    }
-
-
-    nav.black ul {
-          background: black;
-    }
-
-    .showing {
-          max-height: 32rem;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
-
+.scroll-up-btn{
+    position: fixed;
+    height: 40px;
+    width: 35px;
+    background: var(--primary-color);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 1.2rem;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(50%);
+}
+

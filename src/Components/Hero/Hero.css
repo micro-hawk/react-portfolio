@@ -1,128 +1,51 @@
-#hero {
 
-    padding: 10rem 2rem;
+/* home section styling */
+.home{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    min-height: 100vh;
-
-    background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    position: relative;
+    /* background: url("") no-repeat center; */
+    height: 100vh;
+    color: var(--light-color);
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
 }
-
-
-#hero .hero {
-    /* max-width: 1200px; */
-    justify-content: flex-start;
-    margin: 0 auto;
-    padding: 0 50px;
+.home .max-width{
+  width: 100%;
+  display: flex;
 }
-
-#hero h1
-{
-    font-family: 'Architects Daughter', cursive;
-    display: block;
-    width: fit-content;
-    color: transparent;
-    position: relative;
-    font-size: 4rem;
-    animation: text_reveal .5s ease forwards;
-    animation-delay: 1s;
+.home .max-width .row{
+  margin-right: 0;
 }
-
-#hero h1:nth-child(1){
-    animation-delay: 1s;
+.home .home-content .text-1{
+    font-size: 27px;
 }
-#hero h1:nth-child(2){
-    animation-delay: 2s;
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
 }
-#hero h1:nth-child(3){
-    animation-delay: 3s;
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
 }
-
-#hero h1 span {
-    position: absolute;
-    background-color: crimson;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-radius: 20px;
-    animation: text_reveal_box 1.3s ease;
-    animation-delay: 0.8s;
+.home .home-content .text-3 span{
+    color: var(--primary-color);
+    font-weight: 500;
 }
-
-#hero h1:nth-child(1) span {
-    animation-delay: .5s;
-}
-#hero h1:nth-child(2) span {
-    animation-delay: 1.5s;
-}
-#hero h1:nth-child(3) span {
-    animation-delay: 2.5s;
-}
-
-#hero .cta {
+.home .home-content a{
     display: inline-block;
-    text-decoration: none;
-    padding: 10px 30px;
-    color: crimson;
-    background-color: transparent;
-    border-radius: 30px;
-    font-weight: bold;
-    border: 2px solid crimson;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top: 30px ;
-    transition: .3s ease;
-    transition-property: background-color color;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 1.2rem;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
 }
-#hero .cta:hover{
-    color: white;
-    background-color: crimson;
-}
-
-
-#hero .userName {
-    font-family: 'Cookie', cursive;
-        color: transparent;
-    animation: text_reveal_username .5s ease forwards;
-    animation-delay: 1.5s;
-}
-
-
-#hero .hero-image {
-    float: right;
-    width: 70%;
-    height: 100%;
-}
-
-
-/* ------------------------------------------------------------------------------- */
-/* Keyframe */
-@keyframes text_reveal_box {
-    50% {
-        width: 100%;
-        left: 0;
-    }
-    100% {
-        width: 0;
-        left: 100%;
-    }
-}
-
-@keyframes text_reveal {
-    100% {
-        color: white;
-    }
-}
-
-@keyframes text_reveal_username {
-    100% {
-        color: crimson;
-    }
+.home .home-content a:hover{
+    color: var(--primary-color);
+    background: none;
 }

@@ -1,34 +1,31 @@
-import React from "react";
+import React from 'react';
 import "./Hero.css";
 
 export default function Hero(props) {
-
-        
     return (
-        <div>
-            <section id="hero">
-                <div className="hero container row">
-                    <div className="col-lg-4">
-                        <h1>
-                            Hey,<span></span>
-                        </h1>
-                        <h1>
-                            I am <span></span>
-                        </h1>
-                        <h1 className="userName">
-                            Vikas Das !<span></span>
-                        </h1>
-                        <a href="#" type="button" className="cta">
-                            Portfolio
-                         </a>
+        < div >
+            <section className="home" id="home">
+                <div className="max-width">
+                    <div className="row">
+                        <div className="home-content">
+                            <div className="text-1">Heya, I'm </div>
+                            <div className="text-2">Vikas Das</div>
+                            <div className="text-3">a <span className="typing"></span></div>
+                            <a className="buttonType" href="#about"><i className="fas fa-eject"></i> About me</a>
+                        </div>
                     </div>
-                    <div className="col-lg-8">
-                            <img className="hero-image" src={props.heroBannersrc} alt="MicroHawk" />
-                    </div>
+                    <a href="#about" className="scroll-down">
+                        <div className="mouse">
+                            <span></span>
+                        </div>
+                        <div className="arrow">
+                            <span></span>
+                            <span></span>
+
+                        </div>
+                    </a>
                 </div>
             </section>
-
-           
-        </div>
+        </ div >
     );
 }

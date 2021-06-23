@@ -1,52 +1,38 @@
 import React from 'react';
 import "./Header.css";
-import $ from 'jquery';
 export default function Header(props) {
 
-    $(document).ready(function() {
-        $(".menu-icon").on("click", function() {
-              $("nav ul").toggleClass("showing");
-        });
-  });
 
-  // Scrolling Effect
+   return (
+      <div>
+         <div className="scroll-up-btn">
+            <i className="fas fa-chevron-up"></i>
+         </div>
 
-  $(window).on("scroll", function() {
-        if($(window).scrollTop()) {
-              $('nav').addClass('black');
-        }
+         <nav className="navbar">
+            <div className="max-width">
+               <div className="logo">
 
-        else {
-              $('nav').removeClass('black');
-        }
-  })
+                  <p>  <a href="#"> Micro<span>Hawk</span></a></p>
 
-
-    return(
-        <section id="header">
-            <div className="wrapper">
-            <header>
-            <nav>
-               <div class="menu-icon">
-                  <i class="fa fa-bars fa-2x"></i>
                </div>
-               <div class="logo">
-                  MicroHawk
+               <ul className="menu">
+                  <li><a href="#home" className="menu-btn">Home</a></li>
+                  <li><a href="#about" className="menu-btn">About</a></li>
+                  <li><a href="#skills" className="menu-btn">Skills</a></li>
+                  <li><a href="#projects" className="menu-btn">Projects</a></li>
+                  <li><a href="#services" className="menu-btn">Services</a></li>
+                  <li><a href="#contact" className="menu-btn">Contact</a></li>
+               </ul>
+               <div className="menu-btn">
+                  <i className="fas fa-bars"></i>
                </div>
-               <div class="menu hover hover-3">
-                  <ul>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">About</a></li>
-                     <li><a href="#">Blog</a></li>
-                     <li><a href="#">Contact</a></li>
 
-                  </ul>
-               </div>
-            </nav>
-         </header>
+
             </div>
+         </nav>
 
+      </div>
 
-        </section>
-    );
+   );
 }
