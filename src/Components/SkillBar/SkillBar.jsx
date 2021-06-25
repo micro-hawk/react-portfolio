@@ -10,7 +10,9 @@ export default function SkillBar(props) {
                     <span>{props.barName}</span>
                     <span>{props.barValue}</span>
                 </div>
-                <div className="line html"></div>
+                <div className="line-bar">
+                <meter id={props.barName} value={props.barValue} min="0" max="10"></meter>
+                </div>
             </div>
         </div>
     );
